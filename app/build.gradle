@@ -40,6 +40,9 @@ android {
             outputFileName = "TrackWorkTime_${variant.versionName}_${buildTime()}_${variant.buildType.name}${variant.signingReady ? "" : "-unsigned"}.apk"
         }
     }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
